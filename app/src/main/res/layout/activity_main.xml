@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:gravity="center_horizontal"
+			  android:orientation="vertical"
+			  android:textAlignment="center"
+			  tools:context=".MainActivity">
+
+
+	<ImageView
+		android:layout_width="200dp"
+		android:layout_height="200dp"
+		android:contentDescription="hhhhh"
+		android:src="@drawable/bmiimg" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/title"
+		android:textSize="30sp" />
+
+	<RadioGroup
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dp"
+		android:orientation="horizontal"
+
+		>
+
+		<RadioButton
+			android:id="@+id/radio_button_male"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="30dp"
+			android:text="@string/gender1"
+			android:textSize="20sp" />
+
+		<RadioButton
+			android:id="@+id/radio_button_female"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/gender2"
+			android:textSize="20sp" />
+
+	</RadioGroup>
+
+	<EditText
+		android:id="@+id/input_age"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:hint="Age"
+		android:inputType="number"
+		android:paddingHorizontal="15sp"
+		android:textSize="20sp" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="12dp"
+		android:orientation="horizontal">
+
+		<EditText
+			android:id="@+id/input_feet"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="20dp"
+			android:hint="Feet"
+			android:inputType="number"
+			android:paddingHorizontal="15sp"
+			android:textSize="20dp" />
+
+		<EditText
+			android:id="@+id/input_inches"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:hint="Inches"
+			android:inputType="number"
+			android:paddingHorizontal="15sp"
+			android:textSize="20sp" />
+
+
+	</LinearLayout>
+
+
+	<EditText
+		android:id="@+id/input_weight"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:hint="Weight(kg)"
+		android:inputType="numberDecimal"
+		android:paddingHorizontal="15sp"
+		android:textSize="20dp" />
+
+	<Button
+		android:id="@+id/calulate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="25dp"
+		android:paddingHorizontal="70dp"
+		android:paddingVertical="15dp"
+		android:text="Calculate"
+		android:textSize="25sp" />
+
+
+	<TextView
+		android:id="@+id/result"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="25dp"
+		android:textSize="20dp" />
+
+</LinearLayout>
